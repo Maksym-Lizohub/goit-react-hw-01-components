@@ -9,15 +9,15 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
       </div>
 
       <ul className="stats">
-        <li key={Object.keys(stats)[0]}>
+        <li>
           <span className="label">Followers</span>
           <span className="quantity">{stats.followers}</span>
         </li>
-        <li key={Object.keys(stats)[1]}>
+        <li>
           <span className="label">Views</span>
           <span className="quantity">{stats.views}</span>
         </li>
-        <li key={Object.keys(stats)[2]}>
+        <li>
           <span className="label">Likes</span>
           <span className="quantity">{stats.likes}</span>
         </li>
