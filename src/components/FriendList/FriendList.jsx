@@ -2,7 +2,7 @@ import FriendListItem from '../FriendListItem/FriendListItem';
 
 const FriendList = ({ friends }) => {
   return (
-    <ul class="friend-list">
+    <ul className="friend-list">
       {/* <!-- Произвольное кол-во FriendListItem --> */}
       {friends.map(({ avatar, name, isOnline, id }) => (
         <FriendListItem

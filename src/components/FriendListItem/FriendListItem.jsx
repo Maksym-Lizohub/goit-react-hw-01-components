@@ -1,9 +1,9 @@
-const FriendListItem = ({ avatar, name, isOnline, id }) => {
+const FriendListItem = ({ avatar, name, isOnline = false, id }) => {
   return (
-    <li class="item" key={id}>
-      <span class="status" isOnline={isOnline}></span>
-      <img class="avatar" src={avatar} alt="User avatar" width="48" />
-      <p class="name">{name}</p>
+    <li className="item" key={id}>
+      <span className={isOnline ? 'status isOnline' : 'status'}></span>
+      <img className="avatar" src={avatar} alt="User avatar" width="48" />
+      <p className="name">{name}</p>
     </li>
   );
 };
