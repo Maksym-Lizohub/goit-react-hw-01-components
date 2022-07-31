@@ -7,7 +7,7 @@ tr:nth-child(even) {
   background-color: rgb(216, 216, 216);
 }
 
-td:not(:last-child) {
+th:not(:last-child) {
   border-right: 1px rgb(0, 0, 0);
 }
 
