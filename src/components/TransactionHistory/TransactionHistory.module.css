@@ -1,0 +1,22 @@
+.transactionHistory {
+  box-sizing: border-box;
+  min-width: 800px;
+  border-collapse: collapse;
+  border-radius: 25px;
+
+  margin: 0 auto;
+}
+
+th {
+  padding: 10px;
+  text-align: center;
+}
+
+th:not(:last-child) {
+  border-right: 1px white;
+}
+
+thead {
+  background-color: rgb(18, 127, 216);
+  color: rgb(255, 255, 255);
+}

@@ -1,0 +1,19 @@
+tr {
+  text-align: center;
+  font-size: 20px;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(216, 216, 216);
+}
+
+td:not(:last-child) {
+  border-right: 1px rgb(0, 0, 0);
+}
+
+td {
+  padding: 10px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  text-transform: capitalize;
+}

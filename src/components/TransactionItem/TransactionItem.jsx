@@ -1,3 +1,6 @@
+import PropTypes from 'prop-types';
+import s from './TransactionItem.module.css';
+
 const TransactionItem = ({ id, type, amount, currency }) => {
   return (
     <tr key={id}>
@@ -9,3 +12,9 @@ const TransactionItem = ({ id, type, amount, currency }) => {
 };
 
 export default TransactionItem;
+
+TransactionItem.propTypes = {
+  type: PropTypes.string.isRequired,
+  amount: PropTypes.string.isRequired,
+  currency: PropTypes.string.isRequired,
+};
